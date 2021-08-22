@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import authApi from "@/api/auth";
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,14 @@ const routes = [
             layout: "auth-layout",
             guestOnly: true,
         },
+        beforeEnter(to, from, next) {
+            authApi.me().then(response => {
+            }).catch(error => {
+                if (error.response && (error.response.status === 422 || error.response.status === 401)) {
+                    console.log(error.response)
+                }
+            });
+        }
     },
     {
         path: '/login',
