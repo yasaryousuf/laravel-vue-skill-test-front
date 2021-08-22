@@ -1,0 +1,292 @@
+@import "colors";
+
+.tm-input-search-field {
+  background-color: rgb(255 251 251);
+  height: 40px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.37);
+  border-radius: 6px;
+}
+
+.tm-input-search-field .v-input__control .v-input__slot {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.37);
+}
+
+.tm-input-date-field {
+  border-radius: 6px;
+}
+
+.tm-input-date-field .v-input__control .v-input__slot {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tm-breadcrumb {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 6px !important;
+}
+
+.tm-input-text-field .v-input__control .v-input__slot {
+  background-color: #F6F7FB !important;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.tm-input-text-field-1 .v-input__control .v-input__slot {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.33) !important;
+  border-radius: 3px !important;
+}
+
+.tm-input-button-double-light {
+  background-color: #F6F7FB;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.tm-input-button-double-dark {
+  background-color: #2C3040 !important;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25) !important;
+  color: #FFFFFF !important;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.tm-input-text-field .v-input__control .v-input__slot .v-input__append-inner .v-input__icon .v-icon {
+  //color: rgb(13 175 18 / 68%);
+}
+
+.tm-input-text-field .v-input__control .v-input__slot .v-input__append-inner .v-input__icon .primary--text {
+  color: rgb(13 175 18 / 68%) !important;
+}
+
+.tm-input-col-height {
+  height: 52px;
+}
+
+//Login Page scss
+.tm-input-text-field-login {
+  .v-input__control .v-input__slot {
+    background-color: #F6F7FB !important;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px 0 0 3px;
+    height: 43px;
+
+    .v-text-field__slot {
+      input {
+        padding-left: 6px !important;
+        padding-right: 44px !important;
+      }
+    }
+  }
+}
+
+.tm-login-input-join {
+  position: relative;
+}
+
+.tm-login-form {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tm-button-next {
+  width: 43px !important;
+  min-width: auto !important;
+  height: 43px !important;
+  border-radius: 0 3px 3px 0;
+  background-color: #2C3040;
+}
+
+.tm-input-login-third-party {
+  background: $tm-color-white !important;
+  border: 1px solid rgba(126, 126, 126, 0.32);
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(117, 131, 142, 0.04), 0px 8px 16px rgba(52, 60, 68, 0.1);
+  border-radius: 3px;
+  position: relative;
+}
+
+.tm-login-third-party-text {
+  text-transform: none;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: $tm-color-text;
+  font-weight: normal;
+}
+
+.tm-input-third-party-icon {
+  position: absolute;
+  left: 0;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.tm-input-language {
+  background: $tm-color-white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.17) !important;
+  border-radius: 3px !important;
+}
+
+.tm-input-privacy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $tm-color-text;
+}
+
+.tm-input-remember-me-text .v-input__control .v-input__slot .v-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: $tm-color-text;
+}
+
+.tm-input-forgot-password {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  color: $tm-color-hyperlink-text;
+}
+
+.tm-input-copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $tm-color-text;
+}
+
+.tm-input-remember-me-checkbox .v-input__control .v-input__slot .v-input--selection-controls__input .v-icon {
+  font-size: 20px;
+}
+
+.tm-input-forgot-password-message-top {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 120px;
+  color: $tm-color-text;
+}
+
+.tm-input-forgot-password-message-bottom {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 170px;
+  color: $tm-color-text;
+}
+.tm-input-trap-data-filter {
+  background-color: $tm-color-white;
+  height: 39px;
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.37);
+  .width{
+    width: 400px;
+  }
+}
+.tm-input-communication-log-date-field {
+  background-color: $tm-color-white;
+  height: 39px;
+  .width{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .tm-input-login-third-party {
+    padding: 0 3px !important;
+  }
+  .tm-input-third-party-icon {
+    position: absolute;
+    left: -2px;
+    padding: 12px 5px;
+    text-align: center;
+  }
+  .tm-login-third-party-text {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: $tm-color-text;
+    font-weight: normal;
+  }
+  .tm-input-privacy {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $tm-color-text;
+  }
+  .tm-input-forgot-password {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    align-items: center;
+    text-align: center;
+    color: $tm-color-hyperlink-text;
+  }
+  .tm-input-remember-me-text .v-input__control .v-input__slot .v-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    color: $tm-color-text;
+  }
+  .tm-input-remember-me-checkbox .v-input__control .v-input__slot .v-input--selection-controls__input .v-icon {
+    font-size: 15px;
+  }
+  .tm-input-copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $tm-color-text;
+  }
+  .tm-input-forgot-password-message-top {
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 80px;
+  }
+  .tm-input-forgot-password-message-bottom {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 100px;
+  }
+}
+
+
+

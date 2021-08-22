@@ -1,0 +1,80 @@
+.tm-font-element-client {
+  color: rgb(20, 210, 255);
+}
+
+.tm-font-element-case {
+  color: rgb(119, 175, 255);
+}
+
+.tm-font-element-trap {
+  color: rgb(20, 165, 255);
+}
+
+.tm-font-element-device {
+  color: rgb(25, 59, 104);
+}
+
+.tm-font-element-trap-data {
+  color: rgb(90, 95, 109);
+}
+
+.tm-font-device-available {
+  color: rgb(2, 168, 49);
+}
+
+.tm-font-device-report-defect {
+  color: rgb(255, 183, 81);
+}
+
+.tm-font-device-defect {
+  color: rgb(244, 67, 54);
+}
+
+.tm-font-device-all {
+  color: rgb(44, 48, 64);
+}
+
+.tm-font-device-transferred {
+  color: rgb(40, 117, 173);
+}
+
+.tm-font-profile {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #575757;
+}
+
+.tm-font-text-field {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #737373;
+}
+
+.tm-font-dialog-card {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+  color: #131212;
+}
+
+.tm-font-dialog-card-normal {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+  color: #131212;
+  &.lowercase{
+    text-transform: lowercase;
+  }
+}
