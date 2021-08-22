@@ -28,11 +28,10 @@
       <v-spacer />
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        @click="signOut"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">Logout</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -48,12 +47,22 @@
 </template>
 
 <script>
+import userApi from "@/api/User";
+
 export default {
   name: "Dashboard",
 
   data: () => ({
     //
   }),
+  methods: {
+    signOut: function () {
+      userApi.logout().then(() => {
+        this.$store.commit('userModule/LOG_OUT');
+        this.$router.push({path: '/login'});
+      });
+    },
+  }
 }
 </script>
 

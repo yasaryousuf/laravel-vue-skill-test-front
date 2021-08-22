@@ -174,7 +174,7 @@ export default {
         authApi.register(credentials).then(response => {
           this.$store.dispatch("userModule/putToken", response.data.data.access_token);
           this.$store.dispatch("userModule/setUser", response.data.data.user);
-          this.$router.push({path: 'dashboard'});
+          this.$router.push({path: '/dashboard'});
           this.loading = false
         }).catch(error => {
           if (error.response && (error.response.status === 422 || error.response.status === 401)) {

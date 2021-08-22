@@ -1,9 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import path from "@/data/path";
-// import roleHelper from "@/helper/role";
-// import constants from "@/data/constants";
-// import role from "@/data/role";
 
 Vue.use(VueRouter)
 

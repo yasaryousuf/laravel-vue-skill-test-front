@@ -158,7 +158,7 @@ export default {
         authApi.login(credentials).then(response => {
           this.$store.dispatch("userModule/putToken", response.data.data.access_token);
           this.$store.dispatch("userModule/setUser", response.data.data.user);
-          this.$router.push({path: 'dashboard'});
+          this.$router.push({path: '/dashboard'});
           this.loading = false
         }).catch(error => {
           if (error.response && (error.response.status === 422 || error.response.status === 401)) {
@@ -174,34 +174,6 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    },
-    login() {
-      this.loading = true
-      if (this.$refs.form.validate()) {
-        const credentials = {
-          loginEmail: this.loginEmail,
-          loginPassword: this.loginPassword
-        };
-        authApi.login(credentials).then(response => {
-          this.$store.dispatch("user/putToken", response.data.access_token);
-          this.$store.dispatch("user/setUser", response.data.user);
-          this.$router.push({path: 'dashboard'});
-          this.loading = false
-        }).catch(error => {
-          if (error.response && error.response.status === 422) {
-            if (error.response.data.code === 522){
-              this.snackbar.text = error.response.data.message;
-              this.loading = false
-              this.snackbar.show = true;
-              setTimeout(()=>{this.snackbar.show = false; window.location.href = process.env.VUE_APP_OLD_PORTAL_URL;},2000);
-            }else {
-              this.snackbar.text = error.response.data.message;
-              this.loading = false
-              this.snackbar.show = true;
-            }
-          }
-        });
-      }
     },
   },
 }

@@ -9,14 +9,9 @@ import VueMoment from 'vue-moment';
 
 import moment from 'moment'
 
-
-//Layouts
 import DefaultLayout from "@/views/global/layouts/DefaultLayout";
 import AuthLayout from "@/views/global/layouts/AuthLayout";
 
-
-
-//CSS Import file
 import "@/scss/main.scss";
 
 //Global Component Registration

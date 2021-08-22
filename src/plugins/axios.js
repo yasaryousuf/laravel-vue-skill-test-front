@@ -24,9 +24,9 @@ http.interceptors.request.use(function(config) {
 });
 
 http.interceptors.response.use(undefined, function (error) {
-    if(error.response.status === 422){
-        store.commit('user/LOG_OUT');
-        router.push({path: '/'});
+    if(error.response.status === 422 || error.response.status === 401){
+        store.commit('userModule/LOG_OUT');
+        router.push({path: '/login'});
     }
 
     return Promise.reject(error);
